@@ -8,45 +8,82 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>Our Services</title> 
+    <title>Contact Us</title> 
 
     <link rel="stylesheet" href="style.css"> 
+    <header>
+        <div class="header-container">
+          <img src="Images/logo.png" alt="cat logo" id="logo" />
+          <h1>Cat World</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME PAGE</title>
+        <style>
+            
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #D2D2D2;
+                background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
+            }
+            
+            body::before{
+                position: absolute;
+                width: min(1400px, 90vw);
+                top: 10%;
+                left: 50%;
+                height: 90%;
+                transform: translateX(-50%);
+                content: '';
+                background-image: url();
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                pointer-events: none;
+            }
+        </style>
 </head> 
 
 <body> 
-
  
-
-    <header> 
-
-        <h1>Our Services</h1> 
-
-        <nav> 
-
-            <ul> 
-
-                <li><a href="index.html">Home</a></li> 
-
-                <li><a href="about.html">About</a></li> 
-
-                <li><a href="services.html">Services</a></li> 
-
-                <li><a href="contact.html">Contact</a></li> 
-
-            </ul> 
-
-        </nav> 
-
-    </header> 
-
- 
-
+    <section id="one" class="wrapper"><div class="inner">
+        <div class="flex flex-3">
+            <h1>Welcome to our features</h1>
+            <article><header><h3>Purrsonalized Profiles</h3><img src="Images/Profile.png" alt="profile" width="200px" />
+                </header><p>Show us and your date your Purrfect you with fully customizable profiles (selection of pictures, little descriptions of yourself).</p>
+                </footer></article><article><header><h3>skew your search by <br> Setting your prefferences</h3>
+                    <img src="Images/search.png" alt="search" width="200px" />
+                 </header><p>Using our tags User can search for the right pawmate using a selection of different popular tags or search terms</p>
+                </footer></article><article><header><h3>Have face to face meetings<br><img src="Images/call.png" alt="search" width="200px" /> Using Live calls</h3>
+                </header><p>Once friended users can request for calls and see their date face to face before the meeting</p>
+                </footer></article></div>
     <section> 
 
-        <h2>What We Offer</h2> 
-
-        <p>Describe your services here.</p> 
+        <h2>SERVICES PAGE</h2> 
 
     </section> 
 
@@ -54,12 +91,9 @@
 
     <footer> 
 
-        <p>&copy; 2025 My Website. All Rights Reserved.</p> 
+        <p>&copy; 2025 Cat World. All Rights Reserved.</p> 
 
     </footer> 
-
- 
-
 </body> 
 
 </html> 

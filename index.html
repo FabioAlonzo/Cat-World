@@ -1,71 +1,113 @@
 <!DOCTYPE html> 
 
 <html lang="en"> 
+    <header>
+        <div class="header-container">
+          <img src="Images/logo.png" alt="cat logo" id="logo" />
+          <h1>My Website</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <style>
+        
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url();
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<head> 
+    <div class="banner">
+        <div class="slider" style="--quantity: 6">
+            <div class="item" style="--position: 1"><img src="Images/tinder_1.png" alt="bg1"></div>
+            <div class="item" style="--position: 2"><img src="Images/tinder_2.png" alt="bg2"></div>
+            <div class="item" style="--position: 3"><img src="Images/tinder_3.png" alt="bg3"></div>
+            <div class="item" style="--position: 4"><img src="Images/tinder_4.png" alt="bg4"></div>
+            <div class="item" style="--position: 5"><img src="Images/tinder_5.png" alt="bg5"></div>
+            <div class="item" style="--position: 6"><img src="Images/tinder_6.png" alt="bg6"></div>
+        </div>
+        <div class="content">
+            <h1>
+                CAT WORLD
+            </h1>
+            
+        </div>
+    </div>
+    <div class="author">
+        <h2>CAT WORLD</h2>
+        <p>Hello and Welcome to Cat world...</p>
+        <br />
+        <p>Are you looking for that one <big>Miaowtastic</big> companion???</p>
+        <p>The one for your heart, the destined, chosen feline relationship.</p>
+        <img src="Images/looking at the sunset.png" alt="sunset" width="200px" />
+        <p>Well, this website is for <big>YOU</big>, my friend!!!</p>
+        <img src="Images/Thumbs up.png" alt="nice" width="200px" />
+        <p>
+          Cat world is the number #1 hit in the current feline dating space. Here,
+          you can find all kinds of cats— cats that will love you.
+        </p>
 
-    <meta charset="UTF-8"> 
+    </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>Home - My Website</title> 
-
-    <link rel="stylesheet" href="style.css"> 
-
-</head> 
-
-<body> 
-
- 
-
-    <!-- Navigation Bar --> 
-
-    <header> 
-
-        <h1>My Website</h1> 
-
-        <nav> 
-
-            <ul> 
-
-                <li><a href="index.html">Home</a></li> 
-
-                <li><a href="about.html">About</a></li> 
-
-                <li><a href="services.html">Services</a></li> 
-
-                <li><a href="contact.html">Contact</a></li> 
-
-            </ul> 
-
-        </nav> 
-
-    </header> 
-
- 
-
-    <!-- Homepage Content --> 
 
     <section> 
 
-        <h2>Welcome to My Website</h2> 
+        <h2>Get in Touch</h2> 
 
-        <p>This is the homepage where you introduce your site.</p> 
+        <p>Email us at Catworld@gmail.com</p> 
+        
 
     </section> 
 
  
 
-    <!-- Footer --> 
-
     <footer> 
 
-        <p>&copy; 2025 My Website. All Rights Reserved.</p> 
+        <p>&copy; 2025 Cat World. All Rights Reserved.</p> 
 
     </footer> 
-
- 
-
-</body> 
-
-</html> 
+</body>
+</html>

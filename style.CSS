@@ -1,93 +1,198 @@
-/* General Styles */ 
-
-body { 
-
-    font-family: Arial, sans-serif; 
-
-    margin: 0; 
-
-    padding: 0; 
-
-    background-color: #f4f4f4; 
-
-} 
-
+/* Header and Navigation Bar */
+header {
+    background-color: #21e897;
+    color: white;
+    padding: 15px;
+}
  
-
-/* Header and Navigation Bar */ 
-
-header { 
-
-    background-color: #333; 
-
-    color: white; 
-
-    padding: 15px; 
-
+/* Flexbox to Align Logo, Title, and Navigation */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+/* Logo Styling */
+#logo {
+    width: 100px; /* Adjust the size */
+    height: auto;
+    margin-right: 20px; /* Space between logo and title */
+}
+ 
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+/* Ensure Title and Navigation Align Properly */
+h1 {
+    flex-grow: 1; /* Allows the title to adjust within the flexbox */
+    text-align: center; /* Center title */
+}
+/* Center align the main content */
+section {
+    width: 80%; /* Adjust width of the content */
+    max-width: 900px; /* Prevent it from stretching too wide */
+    margin: 0 auto; /* Center the section horizontally */
+    text-align: center; /* Align all text and images to the center */
+}
+/* Home page content CSS */
+/* Ensure images inside the section are centered */
+section img {
+    display: block;
+    margin: 10px auto; /* Center the image */
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(-16deg); /* Ensure initial transform matches animation */
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+/* this makes the images rotate, additionally the rotate makes the image bend downwards*/
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+/*the maths behind the rotation speed and transformation*/
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .content{
+    position: relative;
+    top: 125px;
+    bottom: 0;
+    left: 65%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+/* the Cat world text on top of the image*/
+.banner .content h1 {
+    font-family: 'ICA Rubrik';
+    font-size: 10em;
+    line-height: 1em;
+    color: #25283B;
+    text-align: left;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #21e897;
+}
+/*allows you to add effects to the text*/
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+/* the text below the Cat world text*/
+.banner .content .author{
+    font-family: 'ICA Rubrik';
+    text-align: right;
+    max-width: 200px;
+}
+.banner .content h2{
+    font-size: 3em;
+}
+.author { 
+    align-self: center;
     text-align: center; 
-
-} 
-
- 
-
-nav ul { 
-
-    list-style-type: none; 
-
-    padding: 0; 
-
-} 
-
- 
-
-nav ul li { 
-
-    display: inline; 
-
-    margin: 10px; 
-
-} 
-
- 
-
-nav ul li a { 
-
-    color: white; 
-
-    text-decoration: none; 
-
-} 
-
- 
-
-/* Main Content */ 
-
-section { 
-
-    padding: 20px; 
-
-    text-align: center; 
-
-} 
-
- 
-
-/* Footer */ 
-
-footer { 
-
-    background-color: #333; 
-
-    color: white; 
-
-    text-align: center; 
-
-    padding: 10px; 
-
-    position: fixed; 
-
-    bottom: 0; 
-
-    width: 100%; 
-
-} 
+}
+/*styling for the review page*/
+.reviews {
+    background-color: #21e897;
+    padding: 50px 20px;
+    text-align: center;
+}
+.reviews h1 {
+    font-size: 2.5em;
+    color: #25283B;
+    margin-bottom: 30px;
+}
+.reviews-box {
+    display: flex;
+    align-items: center;
+    background-color: #21e897;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    gap: 20px; /* Space between review boxes */
+}
+.review-content h3 {
+    font-size: 1.5em;
+    color: #25283B;
+    margin-bottom: 10px;
+}
+.review-content p {
+    margin: 5px 0;
+    color: #555;
+    margin-bottom: 10px;
+}
+.review-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #25283B;
+    flex-shrink: 0;
+    text-align: left;
+    flex: 1 ;
+}
+/*FORM*/
+/* make the the description in the form larger*/
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height:auto;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    resize: vertical;
+}

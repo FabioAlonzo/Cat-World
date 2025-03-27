@@ -8,58 +8,118 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>About Us</title> 
+    <title>Contact Us</title> 
 
     <link rel="stylesheet" href="style.css"> 
+    <header>
+        <div class="header-container">
+          <img src="Images/logo.png" alt="cat logo" id="logo" />
+          <h1>Cat World</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME PAGE</title>
+        <style>
+            
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #D2D2D2;
+                background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
+            }
+            
+            body::before{
+                position: absolute;
+                width: min(1400px, 90vw);
+                top: 10%;
+                left: 50%;
+                height: 90%;
+                transform: translateX(-50%);
+                content: '';
+                background-image: url();
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                pointer-events: none;
+            }
+        </style>
 </head> 
 
 <body> 
-
- 
-
-    <header> 
-
-        <h1>About Us</h1> 
-
-        <nav> 
-
-            <ul> 
-
-                <li><a href="index.html">Home</a></li> 
-
-                <li><a href="about.html">About</a></li> 
-
-                <li><a href="services.html">Services</a></li> 
-
-                <li><a href="contact.html">Contact</a></li> 
-
-            </ul> 
-
-        </nav> 
-
-    </header> 
-
  
 
     <section> 
 
-        <h2>Who We Are</h2> 
-
-        <p>This page describes what we do.</p> 
-
+        <h2>About us</h2> 
+        <h2>Our story</h2>
+        <p>I'll never forget the night that i watched my cat, Misu, stare outside longigly at the neighbours cat. a tear flowing down his face i told myself this was enough <br>
+        <big>"I will make Tinder for cats"</big><br>
+        it was well know that at the time cats were unhappy with their relationships status <h2><big>A groundbreaking 90% were unhappy</big></h2><h2> thefore i took it upon myself to change that for the better</h2></p>
+        <p>soon following our entry into the untouched market we have seen Astronomical sucess for ourselves but also in other cats
+        <ul>
+            <li><big>90% increase in long lasting relationships between cats</big></li>
+            <li><big>Our campaigns have had over 100k cats participate in</big> </li>
+            <li><big>98% positive reviews on all platforms!</big></li>
+        </ul>
     </section> 
 
+    <section class="reviews">
+        <h1>Reviews</h1>
+        <div class="review-box">
+            <img src="Images/review_1.png" alt="review 1" class="review-image">
+            <div class="review-content">
+                <h3>John's Review</h3>
+                <p>10/10 I found my pawmate using this!</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <img src="Images/review_2.png" alt="review 2" class="review-image">
+            <div class="review-content">
+                <h3>Jane's Review</h3>
+                <p>My cat is happier than ever. Thank you!</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <img src="Images/review_3.png" alt="review 3" class="review-image">
+            <div class="review-content">
+                <h3>Alex's Review</h3>
+                <p>Great service, highly recommend!</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+    </section>
  
 
     <footer> 
 
-        <p>&copy; 2025 My Website. All Rights Reserved.</p> 
+        <p>&copy; 2025 Cat World. All Rights Reserved.</p> 
 
     </footer> 
-
- 
-
 </body> 
 
 </html> 

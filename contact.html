@@ -11,42 +11,109 @@
     <title>Contact Us</title> 
 
     <link rel="stylesheet" href="style.css"> 
+    <header>
+        <div class="header-container">
+          <img src="Images/logo.png" alt="cat logo" id="logo" />
+          <h1>Cat World</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME PAGE</title>
+        <style>
+            
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #D2D2D2;
+                background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
+            }
+            
+            body::before{
+                position: absolute;
+                width: min(1400px, 90vw);
+                top: 10%;
+                left: 50%;
+                height: 90%;
+                transform: translateX(-50%);
+                content: '';
+                background-image: url();
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                pointer-events: none;
+            }
+        </style>
 </head> 
 
 <body> 
-
- 
-
-    <header> 
-
-        <h1>Contact Us</h1> 
-
-        <nav> 
-
-            <ul> 
-
-                <li><a href="index.html">Home</a></li> 
-
-                <li><a href="about.html">About</a></li> 
-
-                <li><a href="services.html">Services</a></li> 
-
-                <li><a href="contact.html">Contact</a></li> 
-
-            </ul> 
-
-        </nav> 
-
-    </header> 
-
  
 
     <section> 
 
-        <h2>Get in Touch</h2> 
+        <h2>Hello User, We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out. Our team is here to help.</h2> 
+        
+        <p>Email us at Catworld@gmail.com</p> 
+        <p>call us at +971 50 456 7788</p> 
+        <h2> OR USE OUR FORM BELOW </h2>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Name" name="">
 
-        <p>Email us at contact@example.com</p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="Email" placeholder="Email" email="">
+                        
+                    </td>
+                    <tr>
+                        <td>
+                            Description:
+                        </td>
+                        <td>
+                            <textarea placeholder="Write your description here..." name="description" rows="5" cols="30"></textarea>
+                        </td>
+                    </tr>
+                <td>
+                    <input type ="submit" value="Submit">
+                </td>
+            </tr>
+            </table>
+
+
+        </form>
+        
 
     </section> 
 
@@ -54,12 +121,9 @@
 
     <footer> 
 
-        <p>&copy; 2025 My Website. All Rights Reserved.</p> 
+        <p>&copy; 2025 Cat World. All Rights Reserved.</p> 
 
     </footer> 
-
- 
-
 </body> 
 
 </html> 
